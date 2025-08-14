@@ -1,3 +1,6 @@
+/* Google Fonts - Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 /* ============
    Reset básico
    ============ */
@@ -9,12 +12,12 @@
     padding: 0;
 }
 
-/* ==========================
+/* =========================
    Estilos generales y fuentes
    ========================== */
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Aplicar la fuente redondeada */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--background-color);
@@ -56,9 +59,27 @@ button:hover {
    Variables
    ========== */
 :root {
-    --background-color: #f4f4f4;
-    --link-color: #3498db;
-    --button-background-color: #3498db;
-    --button-text-color: #fff;
-    --button-hover-background-color: #2980b9;
+    --primary-orange: #FF8C00; /* DarkOrange */
+    --accent-orange: #FFA500;  /* Orange */
+    --black: #000000;
+    --soft-black: #1A1A1A;
+    --dark-gray-text: #333333;
+    --light-gray-text: #CCCCCC;
+
+    --background-color: var(--soft-black); /* Fondo principal oscuro */
+    --text-color: var(--light-gray-text); /* Texto claro sobre fondo oscuro */
+    --link-color: var(--accent-orange);
+    --button-background-color: var(--primary-orange);
+    --button-text-color: var(--black); /* Texto oscuro en botones naranjas */
+    --button-hover-background-color: var(--accent-orange);
+}
+
+/* Ajustes para el modo oscuro (si ya existe, se sobrescribirá o complementará en App.css) */
+body.dark-mode {
+    --background-color: var(--soft-black);
+    --text-color: var(--light-gray-text);
+    --link-color: var(--accent-orange);
+    --button-background-color: var(--primary-orange);
+    --button-text-color: var(--black);
+    --button-hover-background-color: var(--accent-orange);
 }

@@ -170,7 +170,7 @@ const App: React.FC = () => {
           <NotificationContext.Provider value={{ message, showMessage }}>
             <div className="App">
               <header className="App-header">
-                <h1>MyLuks Wallet</h1>
+                <img src="/logo192.png" className="App-logo" alt="MyLuks Logo" style={{ height: '80px' }} />
                 <Navigation toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
               </header>
               <Authentication isAuthenticated={isAuthenticated} toggleAuth={toggleAuthentication} />
